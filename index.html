@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>"ajaxcall"</title>
+</head>
+<style>
+.ptag{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.ptag1{
+    font-size: 15px;
+    margin-left: 30px;
+}
+.header{
+    background: #383447;
+    width: 100%;
+    height: 160px;
+    color: white;
+}
+.heading2{
+    margin-left: 539px;
+    font-size: 30px;
+}
+.sign-in-button{
+    margin-left: 540px;
+    margin-top: 70px;
+}
+#myInput{   
+    margin-left: 400px;
+    width: 500px;
+    height: 35px;
+    margin-top: 15px
+}
+</style>
+<script src="js/main.js" async></script>
+<body>
+<p id = "myDiv"> </p>
+<div class = "header">
+    <input type="text" id ="myInput" onkeyup="myFunction()" placeholder="Search for movies.." title="Type in a name">
+    <br>
+    <button type="submit" class = "sign-in-button" onclick="loadXMLDoc()">Click to make ajax call</button>
+</div>
+<div id = "main"></div>
+</body>
+</html>
